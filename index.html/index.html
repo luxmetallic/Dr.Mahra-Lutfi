@@ -84,7 +84,7 @@
 
     /* Move the button to the left side */
     .save-contact {
-      text-align: right; /* Center the button text */
+      text-align: Center; /* Center the button text */
       margin-right: 165px;
       margin-top: 20px; /* Adjust the top margin */
     }
@@ -101,6 +101,15 @@
     .save-contact:hover img {
       transform: scale(1.2);
       color: #0077b5;
+    }
+        .save-contact-container {
+      background-color: #000;
+      max-width: 465px;
+      display: flex;
+      justify-content: center;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+      align-items: center;
+      margin: 20px auto; /* Center the container horizontally */
     }
 
     /* Media query for mobile screens */
@@ -131,9 +140,13 @@
       .social-icons-container a {
         margin: 10px; /* Adjust spacing between icons for mobile screens */
       }
-
+      .save-contact-container {
+      max-width: 100%; /* Adjust max-width for mobile screens */
+      flex-wrap: wrap; /* Allow icons to wrap to the next line */
+      }
+        
       .save-contact {
-        text-align: right; /* Center the button text */
+        text-align: center; /* Center the button text */
         margin: 20px auto; /* Center the button horizontally */
       }
     }
